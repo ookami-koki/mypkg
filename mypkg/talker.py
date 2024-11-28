@@ -7,7 +7,7 @@ node = Node("talker")
 pub= node.create_publisher(Int16, "countup", 10)
 n = 0
 
-def cd():
+def cb():
     global n
     msg = Int16()
     msg.data = n
