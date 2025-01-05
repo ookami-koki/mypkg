@@ -1,20 +1,22 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from ip_address_msgs.msg import IpAddress
 import socket
 
 class Ipaddress(Node):
     def __init__(self):
         super().__init__("get_ipaddress_pub")
-        self.pub = self.create_publisher(String, "ip_address", 10)
+        self.pub = self.create_publisher(IpAddress, "ip_address", 10)
         self.create_timer(0.5, self.cb)
 
     def cb(self):
         check = self.get_ipaddress()
         if check:
-            msg = String()
-            msg.data = self.ip_address
+            msg = IpAddress()
+            msg.hostname = self.hostname
+            msg.address = self.ip_address
             self.pub.publish(msg)
+            self.get_logger().info(f'{self.hostname}')
             self.get_logger().info(f'{self.ip_address}')
         else:
             self.get_logger().warn('Failed')
