@@ -11,15 +11,10 @@ class Ipaddress(Node):
 
     def cb(self):
         check = self.get_ipaddress()
-        if check:
-            msg = IpAddress()
-            msg.hostname = self.hostname
-            msg.address = self.ip_address
-            self.pub.publish(msg)
-            self.get_logger().info(f'{self.hostname}')
-            self.get_logger().info(f'{self.ip_address}')
-        else:
-            self.get_logger().warn('Failed')
+        msg = IpAddress()
+        msg.hostname = self.hostname
+        msg.address = self.ip_address
+        self.pub.publish(msg)
 
 
 
