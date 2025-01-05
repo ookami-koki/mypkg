@@ -3,9 +3,10 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-22.04
+    container: https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2:latest
     steps:
-    - uses: https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2:latest
-    - name: build and test
+    - uses: actions/checkout@v2
+    - naime: build and test
       run: |
         rsyc -av ./ /root/ros2_ws/src/mypkg/
         cd /root/ros2_ws
