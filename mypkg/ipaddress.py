@@ -17,7 +17,6 @@ class Ipaddress(Node):
         self.pub.publish(msg)
 
 
-
     def get_ipaddress(self):
         try:
             self.hostname = socket.gethostname()
