@@ -25,6 +25,7 @@ class Ipaddress(Node):
             print("Error")
             return None
 
+
 def main():
     rclpy.init()
     node = Ipaddress()
