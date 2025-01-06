@@ -6,6 +6,12 @@ jobs:
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: installpip
+        run: |
+          sudo apt update
+          sudo apt install python3-pip
+
       - name: install msgspkg
         run: |
           rsync -av ./ /root/ros2_ws/src/mypkg/
