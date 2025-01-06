@@ -10,7 +10,7 @@ jobs:
       - name: installpip
         run: |
           sudo apt update
-          sudo apt install python3-pip
+          sudo apt install python3-pip -y
 
       - name: install msgspkg
         run: |
