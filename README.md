@@ -2,9 +2,53 @@
 授業用
 授業内で作成したプログラムの保存や課題で作成したプログラムの保存を行う｡
 
-## get_ipaddress_pub ノード
+このリポジトリはROS2のパッケージ。
 
-ipaddress.pyに実装されている、ホストネームとipアドレスを取得し送信するノードです。
+## get_ipaddress_pub (ノード)
+
+ipaddress.pyに実装されている、ホストネーム(hostname)とipアドレス(address)を取得しip_addressトピックに送信するノード。
+
+## ip_address (トピック)
+
+ipaddress.pyに実装されているトピックで、get_ipaddress_pubノードからhostnameとaddressを受け取る。
+
+## 使用方法
+
+### 型の作成、またはインストール
+
+ホストネームとアドレスは、独自の型を使用している。
+そのため、自身でパッケージを作成してもらうか、以下のリンクのパッケージをインストールしてから、実行する。
+
+```
+https://github.com/ookami-koki/mypkg.git
+```
+
+### 実行方法
+
+以下のコマンドを入力し実行する。
+
+```
+$ ros2 run mypkg ipaddress
+```
+
+別の端末を立ち上げ、以下のコマンドを入力し実行する。
+
+```
+$ ros2 topic echo /ip_address
+```
+
+### 実行例
+
+```
+---
+hostname: ubuntu-linux-22-04-desktop
+address: 127.0.1.1
+---
+hostname: ubuntu-linux-22-04-desktop
+address: 127.0.1.1
+---
+
+```
 
 ## ライセンス
 - このソフトウェアパッケージの一部は、3条項BSDライセンスの下、再頒布および使用が許可されます。
