@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2024-2025 Koki Iwai
+# SPDX-License-Identifier: BSD-3-Clause
+
 import rclpy
 from rclpy.node import Node
 from ip_address_msgs.msg import IpAddress
