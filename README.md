@@ -13,18 +13,17 @@ ipaddress.pyに実装されている、ホストネーム(hostname)とipアド�
 
 ## ip_address (トピック)
 
-ipaddress.pyに実装されているトピックで、get_ipaddress_pubノードからhostnameとaddressを受け取る。
+ipaddress.pyに実装されている、get_ipaddress_pubノードからhostnameとaddressを受け取るトピック。
 
 ## 使用方法
 
 ### 型の作成、またはインストール
 
-ホストネームとアドレスは、独自の型を使用している。
-そのため、自身でパッケージを作成してもらうか、以下のリンクのパッケージをインストールしてから、実行する。
+ホストネーム(hostname)とアドレス(address)は、独自の型であるIpAddressを使用している。
+そのため、自身でパッケージを作成するか、以下のリンクのパッケージをインストールしてから、実行する。
 
-```
-https://github.com/ookami-koki/mypkg.git
-```
+(https://github.com/ookami-koki/mypkg.git)
+
 
 ### 実行方法
 
