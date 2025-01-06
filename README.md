@@ -52,7 +52,7 @@ address: 127.0.1.1
 ```
 
 ## 必要なソフトウェア
-- python
+- Python
 
 ## テスト環境
 - Ubuntu 24.04LST
