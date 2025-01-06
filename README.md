@@ -22,8 +22,7 @@ ipaddress.pyに実装されている、get_ipaddress_pubノードからhostname�
 ホストネーム(hostname)とアドレス(address)は、独自の型であるIpAddressを使用している。
 そのため、自身でパッケージを作成するか、以下のリンクのパッケージをインストールしてから、実行する。
 
-(https://github.com/ookami-koki/mypkg.git)
-
+- https://github.com/ookami-koki/ip_address_msgs.git
 
 ### 実行方法
 
