@@ -11,7 +11,10 @@ ros2 run mypkg ipaddress & pub=$!
 
 timeout 10 ros2 topic echo /ip_address > /tmp/mypkg.log
 
-kill $pub
+kill -9 $pub
 
 cat /tmp/mypkg.log | 
 grep -e 'hostname' -e 'address'
+
+cat /tmp/mypkg.log |
+grep "\'" && exit 1
