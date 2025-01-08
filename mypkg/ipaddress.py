@@ -17,7 +17,6 @@ class Ipaddress(Node):
         if check:
             msg = IpAddress()
             msg.hostname = self.hostname
-            print(msg.hostname)
             msg.address = self.ip_address
             self.pub.publish(msg)
 
