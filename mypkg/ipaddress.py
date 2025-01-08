@@ -18,11 +18,6 @@ class Ipaddress(Node):
             msg = String()
             msg.data = self.ip_address
             self.pub.publish(msg)
-            self.get_logger().info(f'{self.ip_address}')
-        else:
-            self.get_logger().warn('Failed')
-
-
 
     def get_ipaddress(self):
         try:
