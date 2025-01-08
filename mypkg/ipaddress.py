@@ -14,10 +14,11 @@ class Ipaddress(Node):
 
     def cb(self):
         check = self.get_ipaddress()
-        msg = IpAddress()
-        msg.hostname = self.hostname
-        msg.address = self.ip_address
-        self.pub.publish(msg)
+        if check:
+            msg = IpAddress()
+            msg.hostname = self.hostname
+            msg.address = self.ip_address
+            self.pub.publish(msg)
 
     def get_ipaddress(self):
         try:
