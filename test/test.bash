@@ -13,7 +13,5 @@ timeout 10 ros2 topic echo /ip_address > /tmp/mypkg.log
 
 kill $pub
 
-cat /tmp/mypkg.log
-
 cat /tmp/mypkg.log | 
 grep -e 'hostname' -e 'address'
