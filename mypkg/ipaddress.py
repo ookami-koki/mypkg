@@ -16,7 +16,7 @@ class Ipaddress(Node):
         check = self.get_ipaddress()
         if check:
             msg = String()
-            msg.data = self.ip_address
+            #msg.data = self.ip_address
             self.pub.publish(msg)
 
     def get_ipaddress(self):
