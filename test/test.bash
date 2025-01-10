@@ -16,5 +16,8 @@ kill -9 $pub
 cat /tmp/mypkg.log | 
 grep -e 'hostname' -e 'address'
 
-cat /tmp/mypkg.log |
-grep "\'" && exit 1
+if cat /tmp/mypkg.log | grep "'" ; then
+    exit 1
+else
+    exit 0
+fi
