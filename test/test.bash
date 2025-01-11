@@ -18,7 +18,7 @@ kill -9 $pub
 cat /tmp/mypkg.log | 
 grep -e 'hostname' -e 'address'
 
-if cat /tmp/mypkg.log | grep "'" ; then
+if  cat /tmp/mypkg.log | grep "'"  ||  cat /tmp/mypkg.log | grep "WARNING"  ; then
     exit 1
 else
     exit 0
