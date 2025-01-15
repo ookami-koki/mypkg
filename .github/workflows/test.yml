@@ -18,6 +18,7 @@ jobs:
           cd /root/ros2_ws/src
           pip install git+https://github.com/ookami-koki/ip_address_msgs.git
           pwd
+          ls -a
 
       - name: build and test
         run: |
