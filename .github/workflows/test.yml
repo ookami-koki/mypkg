@@ -5,22 +5,18 @@ jobs:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: installpip
-        run: |
-          sudo apt update
-          sudo apt install python3-pip -y
-
-      - name: install msgspkg
-        run: |
-          rsync -av ./ /root/ros2_ws/src/mypkg/
-          cd /root/ros2_ws/src
-          pip install git+https://github.com/ookami-koki/ip_address_msgs.git
-          pwd
-          ls -a
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          path: src
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          repository: ookami-koki/ip_address_msgs
+          path: src
 
       - name: build and test
         run: |
+          rsyc -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           bash -xv ./src/mypkg/test/test.bash /root
