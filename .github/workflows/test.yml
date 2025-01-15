@@ -16,7 +16,7 @@ jobs:
           path: src/ip_address_msgs
       - run: |
           ls
-          cd mypkg
+          cd src
           ls
 
       - name: build and test
