@@ -11,12 +11,12 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
         with:
-          path: src/mypkg
+          path:
       - name: checkout
         uses: actions/checkout@v2
         with:
           repository: ookami-koki/ip_address_msgs
-          path: src/ip_address_msgs
+          path:
       - run: |
           pwd
           cd src
