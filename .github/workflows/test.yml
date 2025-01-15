@@ -15,8 +15,10 @@ jobs:
           repository: ookami-koki/ip_address_msgs
           path: src/ip_address_msgs
       - run: |
-          ls
           cd src
+          ls
+          pwd
+          cd mypkg
           ls
 
       - name: build and test
