@@ -15,6 +15,7 @@ jobs:
           repository: ookami-koki/ip_address_msgs
           path: src/ip_address_msgs
       - run: |
+          pwd
           cd src
           ls
           pwd
