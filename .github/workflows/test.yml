@@ -16,7 +16,7 @@ jobs:
         run: |
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws/src
-          pip download git+https://github.com/ookami-koki/ip_address_msgs.git
+          pip install git+https://github.com/ookami-koki/ip_address_msgs.git
           pwd
           ls -a
 
