@@ -16,8 +16,11 @@ jobs:
           path: src
       - run: |
           ls
+          cd src
+          ls
 
       - name: build and test
         run: |
+          rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           bash -xv ./src/mypkg/test/test.bash /root
