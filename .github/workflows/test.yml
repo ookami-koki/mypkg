@@ -25,8 +25,10 @@ jobs:
           pwd
           rsync -av ./ /root/ros2_ws/src/ip_address_msgs/
           ls
-          echo ---------
+          echo -----------------------------
           cd
+          find -iname "setup.bash"
+          echo -----------------------------
           cd /root/ros2_ws
           pwd
           ls
