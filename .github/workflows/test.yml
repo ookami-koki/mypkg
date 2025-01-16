@@ -9,7 +9,7 @@ jobs:
       - name: build and test
         with:
           path: main
-        run: |
+      - run: |
           rsync -av ./ /root/ros2_ws/src/mypkg/
           pwd
           ls
