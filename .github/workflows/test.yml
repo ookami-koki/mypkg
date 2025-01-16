@@ -26,6 +26,7 @@ jobs:
           rsync -av ./ /root/ros2_ws/src/ip_address_msgs/
           ls
           echo ---------
+          cd
           source /opt/ros/humble/setup.bash
           cd /root/ros2_ws
           pwd
