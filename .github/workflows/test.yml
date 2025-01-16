@@ -27,7 +27,6 @@ jobs:
           ls
           echo ---------
           cd
-          source ~/.bashrc
           cd /root/ros2_ws
           pwd
           ls
