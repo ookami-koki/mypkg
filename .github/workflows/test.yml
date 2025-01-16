@@ -18,11 +18,11 @@ jobs:
         run: |
           pwd
           ls
-          rsync -av ./ /root/ros2_ws/src/ip_address_msgs/
-          echo ---------
-          cd /__w/mypkg/mypkg/main
           rsync -av ./ /root/ros2_ws/src/mypkg/
+          echo ---------
+          cd /__w/mypkg/mypkg/sub
           pwd
+          rsync -av ./ /root/ros2_ws/src/ip_address_msgs/
           ls
           echo ---------
           cd /root/ros2_ws/src
