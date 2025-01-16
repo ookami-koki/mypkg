@@ -12,4 +12,6 @@ jobs:
           pwd
           ls
           cd /root/ros2_ws
+          pwd
+          ls
           bash -xv ./src/mypkg/test/test.bash /root
