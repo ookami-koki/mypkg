@@ -26,7 +26,8 @@ jobs:
           rsync -av ./ /root/ros2_ws/src/ip_address_msgs/
           ls
           echo -----------------------------
-          cd
+          cd /root/ros2_ws
+          install/setup.bash
           find -iname "setup.bash"
           echo -----------------------------
           cd /root/ros2_ws
