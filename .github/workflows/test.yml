@@ -16,6 +16,7 @@ jobs:
           path: sub
       - name: build and test
         run: |
+          cd main
           pwd
           ls
           rsync -av ./ /root/ros2_ws/src/mypkg/
