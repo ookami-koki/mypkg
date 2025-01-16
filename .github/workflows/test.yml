@@ -9,7 +9,6 @@ jobs:
       - name: build and test
       - run: |
           rsync -av ./ /root/ros2_ws/src/mypkg/
-          rsync -av ./ /root/ros2_ws/src/ip_address_msgs/
           pwd
           ls
           cd /root/ros2_ws/src
