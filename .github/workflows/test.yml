@@ -17,6 +17,13 @@ jobs:
         run: |
           pwd
           ls
+          cd main
+          pwd
+          ls
+          rsync -av ./ /root/ros2_ws/src/mypkg/
+          cd /__w/mypkg/mypkg/sub
+          pwd
+          ls
           cd /root/ros2_ws/src
           pwd
           ls
