@@ -12,6 +12,7 @@ jobs:
       - name: make ip_address
         uses: actions/checkout@v2
         with:
+          repository: ookami-koki/ip_address_msgs
           path: sub
       - name: build and test
         run: |
