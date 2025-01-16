@@ -5,18 +5,14 @@ jobs:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
-      - name: synchro mypkg
+      - name: make mypkg
         uses: actions/checkout@v2
         with:
           path: main
-        run: |
-          rsync -av ./ /root/ros2_ws/src/mypkg/
-      - name: synchro ip_address
+      - name: make ip_address
         uses: actions/checkout@v2
         with:
           path: sub
-        run: |
-          rsync -av ./ /root/ros2_ws/src/ip_address_msgs/
       - name: build and test
         run: |
           pwd
