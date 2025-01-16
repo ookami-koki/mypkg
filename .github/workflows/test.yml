@@ -17,17 +17,22 @@ jobs:
         run: |
           pwd
           ls
+          echo ---------
           cd main
           pwd
           ls
+          echo ---------
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /__w/mypkg/mypkg/sub
           pwd
           ls
+          echo ---------
           cd /root/ros2_ws/src
           pwd
           ls
+          echo ---------
           cd /root/ros2_ws
           pwd
           ls
+          echo ---------
           bash -xv ./src/mypkg/test/test.bash /root
