@@ -5,27 +5,11 @@ jobs:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
-      - name: rsync
-        run: |
-          rsync -av ./ /root/ros2_ws/src/mypkg/
-      - name: checkout
-        uses: actions/checkout@v2
-        with:
-          path:
-      - name: checkout
-        uses: actions/checkout@v2
-        with:
-          repository: ookami-koki/ip_address_msgs
-          path:
-      - run: |
-          pwd
-          cd src
-          ls
-          pwd
-          cd mypkg
-          ls
-
+      - uses: actions/checkout@v2
       - name: build and test
         run: |
+          rsync -av ./ /root/ros2_ws/src/mypkg/
+          pwd
+          ls
           cd /root/ros2_ws
           bash -xv ./src/mypkg/test/test.bash /root
