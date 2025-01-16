@@ -7,6 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: build and test
+        with:
+          path: main
         run: |
           rsync -av ./ /root/ros2_ws/src/mypkg/
           pwd
