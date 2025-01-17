@@ -32,8 +32,9 @@ jobs:
           echo -----------------------------
           cd /root/
           tree
-          cd /root/ros2_ws
-          find -iname "setup.bash"
+          cd /root/ros2_ws/install
+          source setup.bash
+          source local_setup.bash
           echo -----------------------------
           cd /root/ros2_ws
           pwd
