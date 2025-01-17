@@ -30,9 +30,9 @@ jobs:
           rsync -av ./ /root/ros2_ws/src/ip_address_msgs/
           ls
           echo -----------------------------
-          cd /root/
-          tree
           cd /root/ros2_ws/install
+          pwd
+          ls
           source setup.bash
           source local_setup.bash
           echo -----------------------------
