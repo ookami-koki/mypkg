@@ -33,8 +33,8 @@ jobs:
           cd /root/ros2_ws/install
           pwd
           ls
-          source ./setup.bash
-          source ./local_setup.bash
+          source /root/ros2_ws/install/setup.bash
+          source /root/ros2_ws/install/local_setup.bash
           echo -----------------------------
           cd /root/ros2_ws
           pwd
