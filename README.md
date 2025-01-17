@@ -1,4 +1,4 @@
-# mypkg
+# mypkg<F2>
 
 [![test](https://github.com/ookami-koki/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/mypkg/actions/workflows/test.yml)
 
@@ -17,10 +17,10 @@ ipaddress.pyに実装されている、get_ipaddress_pubノードからhostname�
 
 ## 使用方法
 
-### 型の作成、またはインストール
+### 型のインストール
 
 ホストネーム(hostname)とアドレス(address)は、独自の型であるIpAddressを使用している。
-そのため、自身でパッケージを作成するか、以下のリンクのパッケージをインストールしてから、実行する。
+そのため、以下のリンクのパッケージをインストールしてから、実行する。
 
 - https://github.com/ookami-koki/ip_address_msgs.git
 
