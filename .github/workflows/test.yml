@@ -14,6 +14,10 @@ jobs:
         with:
           repository: ookami-koki/ip_address_msgs
           path: sub
+      - name: install tree
+        run: |
+          sudo apt-get update
+          sudo apt install tree
       - name: build and test
         run: |
           cd main
@@ -27,7 +31,6 @@ jobs:
           ls
           echo -----------------------------
           cd /root/ros2_ws
-          install/setup.bash
           find -iname "setup.bash"
           echo -----------------------------
           cd /root/ros2_ws
