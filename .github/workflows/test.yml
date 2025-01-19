@@ -35,6 +35,7 @@ jobs:
           pwd
           ls
           bash ./setup.bash
+          bash ./local_setup.bash
           echo -----------------------------
           cd /root/ros2_ws
           pwd
