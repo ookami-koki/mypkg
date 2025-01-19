@@ -14,10 +14,11 @@ jobs:
         with:
           repository: ookami-koki/ip_address_msgs
           path: sub
-      - name: install tree
+      - name: install tree and ament
         run: |
           sudo apt-get update
           sudo apt install tree
+          sudo apt install python3-ament-package
       - name: build and test
         run: |
           cd main
