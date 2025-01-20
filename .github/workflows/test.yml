@@ -12,6 +12,9 @@ jobs:
           sudo apt install cmake -y
       - name: build and test
         run: |
+          echo -----------
+          pwd
+          echo -----------
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           bash -xv ./src/mypkg/mypkg/test/test.bash /root
