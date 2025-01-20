@@ -9,17 +9,8 @@ jobs:
       - name: install cmake
         run: |
           cd /root/ros2_ws/src
-          sudo apt update
-          sudo apt install cmake -y
-          sudo apt install tree
       - name: build and test
         run: |
-          cd /opt
-          echo -----------
-          cd /__w/mypkg/mypkg
-          pwd
-          echo $ROS_DISTRO
-          echo -----------
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           bash -xv ./src/mypkg/mypkg/test/test.bash /root
