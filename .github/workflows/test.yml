@@ -12,6 +12,7 @@ jobs:
           sudo apt install
       - name: build and test
         run: |
+          echo $ROS_DISTRO
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           bash -xv ./src/mypkg/mypkg/test/test.bash /root
