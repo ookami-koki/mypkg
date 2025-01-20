@@ -10,7 +10,6 @@ jobs:
         run: |
           sudo apt update
           sudo apt install cmake -y
-          ros2 pkg list
       - name: build and test
         run: |
           rsync -av ./ /root/ros2_ws/src/mypkg/
