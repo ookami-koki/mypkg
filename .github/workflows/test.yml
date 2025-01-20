@@ -9,7 +9,7 @@ jobs:
       - name: install cmake
         run: |
           sudo apt update
-          sudo apt install ros-jazzy-ament-cmake
+          sudo apt install
       - name: build and test
         run: |
           rsync -av ./ /root/ros2_ws/src/mypkg/
