@@ -9,10 +9,11 @@ jobs:
       - name: install cmake
         run: |
           sudo apt update
-          sudo apt install
+          sudo apt install cmake
+      - name: install check
+          ros2 pkg list
       - name: build and test
         run: |
-          echo $ROS_DISTRO
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           bash -xv ./src/mypkg/mypkg/test/test.bash /root
