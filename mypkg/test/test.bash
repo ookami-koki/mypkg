@@ -9,7 +9,7 @@ source $dir/.bashrc
 
 ros2 run mypkg ipaddress & pub=$!
 
-sleep 1
+sleep 2
 
 timeout 10 ros2 topic echo /ip_address > /tmp/mypkg.log
 
