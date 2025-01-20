@@ -1,0 +1,2 @@
+string hostname
+string address

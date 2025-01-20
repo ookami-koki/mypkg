@@ -7,13 +7,17 @@
 
 このリポジトリはROS2のパッケージである。
 
-## get_ipaddress_pub (ノード)
+## ノード
 
-ipaddress.pyに実装されている、ホストネーム(hostname)とipアドレス(address)を取得しip_addressトピックに送信するノード。
+### get_ipaddress_pub
 
-## ip_address (トピック)
+ipaddress.pyに実装されている、ipアドレス(address)を取得しip_addressトピックに送信するノード。
 
-ipaddress.pyに実装されている、get_ipaddress_pubノードからhostnameとaddressを受け取るトピック。
+## トピック
+
+### ip_address
+
+ipaddress.pyに実装されている、get_ipaddress_pubノードからaddressを受け取るトピック。
 
 ## 使用方法
 
