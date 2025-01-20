@@ -15,7 +15,6 @@ jobs:
       - name: build and test
         run: |
           cd /opt
-          tree
           echo -----------
           cd /__w/mypkg/mypkg
           pwd
