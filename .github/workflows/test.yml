@@ -16,6 +16,7 @@ jobs:
           echo -----------
           cd /__w/mypkg/mypkg
           pwd
+          echo $ROS_DISTRO
           echo -----------
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
