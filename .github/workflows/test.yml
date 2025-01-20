@@ -14,13 +14,13 @@ jobs:
           sudo apt install tree
       - name: build and test
         run: |
+          cd
+          tree
           echo -----------
           cd /__w/mypkg/mypkg
           pwd
           echo $ROS_DISTRO
           echo -----------
-          cd
-          tree
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           bash -xv ./src/mypkg/mypkg/test/test.bash /root
