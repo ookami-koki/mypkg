@@ -4,6 +4,9 @@ dir=~
 [ "$1" != "" ] && dir="$1"
 
 cd $dir/ros2_ws
+
+echo $ROS_DISTRO
+
 colcon build
 source $dir/.bashrc
 
