@@ -8,11 +8,13 @@ jobs:
       - uses: actions/checkout@v2
       - name: install cmake
         run: |
+          cd /rppt/ros2_ws/src
           sudo apt update
           sudo apt install cmake -y
       - name: build and test
         run: |
           echo -----------
+          cd /__w/mypkg/mypkg
           pwd
           echo -----------
           rsync -av ./ /root/ros2_ws/src/mypkg/
