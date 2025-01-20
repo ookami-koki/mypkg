@@ -5,40 +5,9 @@ jobs:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
-      - name: make mypkg
-        uses: actions/checkout@v2
-        with:
-          path: main
-      - name: make ip_address
-        uses: actions/checkout@v2
-        with:
-          repository: ookami-koki/ip_address_msgs
-          path: sub
-      - name: install tree and ament
-        run: |
-          sudo apt-get update
-          sudo apt install tree
-          sudo apt install python3-ament-package
+      - uses: actions/checkout@v2
       - name: build and test
         run: |
-          cd main
-          pwd
-          ls
           rsync -av ./ /root/ros2_ws/src/mypkg/
-          echo ---------
-          cd /__w/mypkg/mypkg/sub
-          pwd
-          rsync -av ./ /root/ros2_ws/src/ip_address_msgs/
-          ls
-          echo -----------------------------
-          cd /root/ros2_ws/install
-          pwd
-          ls
-          bash ./setup.bash
-          bash ./local_setup.bash
-          echo -----------------------------
           cd /root/ros2_ws
-          pwd
-          ls
-          echo ---------
           bash -xv ./src/mypkg/test/test.bash /root
