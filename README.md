@@ -5,7 +5,7 @@
 授業用
 授業内で作成したプログラムの保存や課題で作成したプログラムの保存を行う｡
 
-このリポジトリはROS2のパッケージである。
+このリポジトリはROS2のパッケージである。また、このブランチでは別のリポジトリのパッケージを使用している。
 
 ## ノード
 
@@ -61,6 +61,10 @@ address: 127.0.1.1
 
 ## テスト環境
 - Ubuntu 24.04LST
+
+## 参考
+- https://www.bioerrorlog.work/entry/actions-clone-another-repo
+- https://stackoverflow.com/questions/56837562/colcon-build-failure-could-not-find-a-package-configuration-file-provided-by
 
 ## ライセンス
 - このソフトウェアパッケージの一部は、3条項BSDライセンスの下、再頒布および使用が許可されます。
