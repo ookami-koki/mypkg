@@ -1,2 +1,0 @@
-string hostname
-string address
