@@ -5,9 +5,20 @@ jobs:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
-      - uses: actions/checkout@v2
+      - name: make mypkg
+        uses: actions/checkout@v2
+        with:
+          path: main
+      - name: make ip_address
+        uses: actions/checkout@v2
+        with:
+          repository: ookami-koki/ip_address_msgs
+          path: sub
       - name: build and test
         run: |
+          cd /__w/mypkg/mypkg/main
           rsync -av ./ /root/ros2_ws/src/mypkg/
+          cd /__w/mypkg/mypkg/sub
+          rsync -av ./ /root/ros2_ws/src/ip_address_msgs/
           cd /root/ros2_ws
           bash -xv ./src/mypkg/test/test.bash /root
