@@ -14,11 +14,13 @@
 ### another-pkg
 自作のパッケージを使用し、ホストネームとipアドレスを送信するノードが実装されている。
 
-## get_ipaddress_pub (ノード)
+## ノード
+### get_ipaddress_pub
 
 ipaddress.pyに実装されている、ipアドレス(address)を取得しip_addressトピックに送信するノード。
 
-## ip_address (トピック)
+## トピック
+### ip_address
 
 ipaddress.pyに実装されている、get_ipaddress_pubノードからaddressを受け取るトピック。
 
