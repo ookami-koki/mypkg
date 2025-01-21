@@ -7,13 +7,20 @@
 
 このリポジトリはROS2のパッケージである。
 
+## ブランチ
+このリポジトリには複数のブランチが作成されている。この内、ipアドレスを送信する機能を持つブランチは以下のブランチである。
+### main
+今いるこのブランチ。ipアドレスのみを送信するノードが実装されている。
+### another-pkg
+自作のpkgを使用し、ホストネームとipアドレスを送信するノードが実装されている。
+
 ## get_ipaddress_pub (ノード)
 
-ipaddress.pyに実装されている、ホストネーム(hostname)とipアドレス(address)を取得しip_addressトピックに送信するノード。
+ipaddress.pyに実装されている、ipアドレス(address)を取得しip_addressトピックに送信するノード。
 
 ## ip_address (トピック)
 
-ipaddress.pyに実装されている、get_ipaddress_pubノードからhostnameとaddressを受け取るトピック。
+ipaddress.pyに実装されている、get_ipaddress_pubノードからaddressを受け取るトピック。
 
 
 ## 実行方法
