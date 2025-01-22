@@ -73,7 +73,7 @@ address: 127.0.1.1
 
 ## テスト環境
 - Ubuntu 22.04 LST
-    - ROS2 Humblie (GitHub actions)
+    - ROS2 Humble (GitHub actions)
 
 - Ubuntu 24.04 LST
     - ROS2 Jazzy (作成者のPC)
