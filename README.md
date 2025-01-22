@@ -47,11 +47,9 @@ $ ros2 topic echo /ip_address
 
 ```
 ---
-hostname: ubuntu-linux-22-04-desktop
-address: 127.0.1.1
+data: 127.0.1.1
 ---
-hostname: ubuntu-linux-22-04-desktop
-address: 127.0.1.1
+data: 127.0.1.1
 ---
 
 ```
