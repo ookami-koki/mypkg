@@ -13,9 +13,6 @@
 hostname: ubuntu-linux-22-04-desktop
 address: 127.0.1.1
 ---
-hostname: ubuntu-linux-22-04-desktop
-address: 127.0.1.1
----
 
 ```
 
@@ -23,13 +20,13 @@ address: 127.0.1.1
 
 ### get_ipaddress_pub
 
-ipaddress.pyに実装されている、ipアドレス(address)を取得しip_addressトピックに送信するノードです。
+ipアドレス(address)とホストネーム(hostname)をトピックに送信するノードです。
 
 ## トピック
 
 ### ip_address
 
-ipaddress.pyに実装されている、get_ipaddress_pubノードからaddressを受け取るトピックです。
+get_ipaddress_pubノードからipアドレス(address)とホストネーム(hostname)を受け取るトピックです。
 
 ## 使用方法
 
