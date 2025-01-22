@@ -3,8 +3,7 @@
 [![test](https://github.com/ookami-koki/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/mypkg/actions/workflows/test.yml)
 
 このリポジトリはROS2のパッケージである。
-このパッケージでは、ipアドレスをパブリッシュする。
-また、このブランチでは、ipアドレスとホストネームをパブリッシュする。
+このパッケージでは、ipアドレスとホストネームをパブリッシュする。
 
 ## 実行例
 
