@@ -2,11 +2,12 @@
 
 [![test](https://github.com/ookami-koki/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/mypkg/actions/workflows/test.yml)
 
+このリポジトリはROS2のパッケージである。
+このパッケージでは、ipアドレスをパブリッシュする。
+また、このブランチでは、ipアドレスとホストネームをパブリッシュする。
+
 授業用
 授業内で作成したプログラムの保存や課題で作成したプログラムの保存を行う｡
-
-このリポジトリはROS2のパッケージである。
-また、このブランチでは独自の型を使用している。
 
 ## ノード
 
