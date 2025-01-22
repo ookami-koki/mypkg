@@ -2,9 +2,9 @@
 
 [![test](https://github.com/ookami-koki/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/mypkg/actions/workflows/test.yml)
 
-このリポジトリはROS2のパッケージである。
-このパッケージでは、ipアドレスをパブリッシュする。
-また、another-pkgブランチでは、ipアドレスとホストネームをパブリッシュする。
+このリポジトリはROS2のパッケージです。
+このパッケージでは、ipアドレスをパブリッシュできます。
+また、another-pkgブランチでは、ipアドレスとホストネームをパブリッシュできます。
 
 ## 実行例
 
@@ -18,32 +18,32 @@ data: 127.0.1.1
 ```
 
 ## ブランチ
-このリポジトリには複数のブランチが作成されている。この内、ipアドレスを送信する機能を持つブランチは以下のブランチである。
+このリポジトリには複数のブランチが作成されています。この内、ipアドレスを送信する機能を持つブランチは以下のブランチです。
 ### main
-今いるこのブランチ。ipアドレスのみを送信するノードが実装されている。
+今いるこのブランチ。ipアドレスのみを送信するノードが実装されています。
 ### another-pkg
-独自の型を使用し、ホストネームとipアドレスを送信するノードが実装されている。
+独自の型を使用し、ホストネームとipアドレスを送信するノードが実装されています。
 
 ## ノード
 ### get_ipaddress_pub
 
-ipaddress.pyに実装されている、ipアドレスを取得しip_addressトピックに送信するノード。
+ipaddress.pyに実装されている、ipアドレスを取得しip_addressトピックに送信するノードです。
 
 ## トピック
 ### ip_address
 
-ipaddress.pyに実装されている、get_ipaddress_pubノードからaddressを受け取るトピック。
+ipaddress.pyに実装されている、get_ipaddress_pubノードからaddressを受け取るトピックです。
 
 
 ## 実行方法
 
-以下のコマンドを入力し実行する。
+以下のコマンドを入力し実行してください。
 
 ```
 $ ros2 run mypkg ipaddress
 ```
 
-別の端末を立ち上げ、以下のコマンドを入力し実行する。
+別の端末を立ち上げ、以下のコマンドを入力し実行してください。
 
 ```
 $ ros2 topic echo /ip_address
