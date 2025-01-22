@@ -2,8 +2,8 @@
 
 [![test](https://github.com/ookami-koki/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/ookami-koki/mypkg/actions/workflows/test.yml)
 
-このリポジトリはROS2のパッケージである。
-このパッケージでは、ipアドレスとホストネームをパブリッシュする。
+このリポジトリはROS2のパッケージです。
+このパッケージでは、ipアドレスとホストネームをパブリッシュできます。
 
 ## 実行例
 
@@ -22,33 +22,33 @@ address: 127.0.1.1
 
 ### get_ipaddress_pub
 
-ipaddress.pyに実装されている、ipアドレス(address)を取得しip_addressトピックに送信するノード。
+ipaddress.pyに実装されている、ipアドレス(address)を取得しip_addressトピックに送信するノードです。
 
 ## トピック
 
 ### ip_address
 
-ipaddress.pyに実装されている、get_ipaddress_pubノードからaddressを受け取るトピック。
+ipaddress.pyに実装されている、get_ipaddress_pubノードからaddressを受け取るトピックです。
 
 ## 使用方法
 
 ### 型のインストール
 
-ホストネーム(hostname)とアドレス(address)は、独自の型であるIpAddressを使用している。
-以下のリンクのパッケージをインストールしてから、実行する。
+ホストネーム(hostname)とアドレス(address)は、独自の型であるIpAddressを使用しています。
+以下のリンクのパッケージをインストールしてから、実行してください。
 
 
 - https://github.com/ookami-koki/ip_address_msgs.git
 
 ### 実行方法
 
-以下のコマンドを入力し実行する。
+以下のコマンドを入力し実行してください。
 
 ```
 $ ros2 run mypkg ipaddress
 ```
 
-別の端末を立ち上げ、以下のコマンドを入力し実行する。
+別の端末を立ち上げ、以下のコマンドを入力し実行してください。
 
 ```
 $ ros2 topic echo /ip_address
