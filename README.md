@@ -62,7 +62,11 @@ address: 127.0.1.1
 - Python
 
 ## テスト環境
-- Ubuntu 24.04LST
+ Ubuntu 22.04 LST
+    - ROS2 Humblie (GitHub actions)
+
+- Ubuntu 24.04 LST
+    - ROS2 Jazzy (作成者のPC)
 
 ## 参考
 - https://www.bioerrorlog.work/entry/actions-clone-another-repo
