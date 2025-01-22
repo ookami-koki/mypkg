@@ -27,7 +27,7 @@ data: 127.0.1.1
 ## ノード
 ### get_ipaddress_pub
 
-ipaddress.pyに実装されている、ipアドレス(address)を取得しip_addressトピックに送信するノード。
+ipaddress.pyに実装されている、ipアドレスを取得しip_addressトピックに送信するノード。
 
 ## トピック
 ### ip_address
