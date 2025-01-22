@@ -56,8 +56,11 @@ data: 127.0.1.1
 - Python
 
 ## テスト環境
-- Ubuntu 24.04LST
+- Ubuntu 22.04 LST
+    - ROS2 Humblie (GitHub actions)
 
+- Ubuntu 24.04 LST
+    - ROS2 Jazzy (作成者のPC)
 ## ライセンス
 - このソフトウェアパッケージの一部は、3条項BSDライセンスの下、再頒布および使用が許可されます。
 - このパッケージのコードは、下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作としたものです。
