@@ -53,7 +53,6 @@ $ ros2 topic echo /ip_address
 ---
 data: 127.0.1.1
 ---
-
 ```
 
 ## テスト環境
