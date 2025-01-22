@@ -72,7 +72,7 @@ address: 127.0.1.1
 - Python
 
 ## テスト環境
- Ubuntu 22.04 LST
+- Ubuntu 22.04 LST
     - ROS2 Humblie (GitHub actions)
 
 - Ubuntu 24.04 LST
