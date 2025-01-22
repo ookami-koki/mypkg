@@ -9,6 +9,19 @@
 授業用
 授業内で作成したプログラムの保存や課題で作成したプログラムの保存を行う｡
 
+## 実行例
+
+```
+---
+hostname: ubuntu-linux-22-04-desktop
+address: 127.0.1.1
+---
+hostname: ubuntu-linux-22-04-desktop
+address: 127.0.1.1
+---
+
+```
+
 ## ノード
 
 ### get_ipaddress_pub
