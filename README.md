@@ -68,9 +68,6 @@ address: 127.0.1.1
 
 ```
 
-## 必要なソフトウェア
-- Python
-
 ## テスト環境
 - Ubuntu 22.04 LST
     - ROS2 Humble (GitHub actions)
