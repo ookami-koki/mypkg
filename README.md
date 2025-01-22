@@ -13,8 +13,6 @@
 ---
 data: 127.0.1.1
 ---
-data: 127.0.1.1
----
 
 ```
 
@@ -28,12 +26,12 @@ data: 127.0.1.1
 ## ノード
 ### get_ipaddress_pub
 
-ipaddress.pyに実装されている、ipアドレスを取得しip_addressトピックに送信するノードです。
+ipアドレスを取得しip_addressトピックに送信するノードです。
 
 ## トピック
 ### ip_address
 
-ipaddress.pyに実装されている、get_ipaddress_pubノードからaddressを受け取るトピックです。
+get_ipaddress_pubノードからdataを受け取ります。
 
 
 ## 実行方法
@@ -56,8 +54,6 @@ $ ros2 topic echo /ip_address
 ---
 data: 127.0.1.1
 ---
-data: 127.0.1.1
----
 
 ```
 
@@ -69,7 +65,7 @@ data: 127.0.1.1
     - ROS2 Jazzy (作成者のPC)
 ## ライセンス
 - このソフトウェアパッケージの一部は、3条項BSDライセンスの下、再頒布および使用が許可されます。
-- このパッケージのコードは、下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作としたものです。
+- このパッケージのコードの一部は、下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作としたものです。
     - (https://ryuichiueda.github.io/slides_marp/robosys2024/lesson8.html)
     - (https://ryuichiueda.github.io/slides_marp/robosys2024/lesson9.html)
     - (https://ryuichiueda.github.io/slides_marp/robosys2024/lesson10.html)
